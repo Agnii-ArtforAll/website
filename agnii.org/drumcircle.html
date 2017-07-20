@@ -30,7 +30,7 @@
 
 <style>
 img{
-	object-fit: none;
+	//object-fit: none;
 	width: 243px;
 	height: 150px;
 	 //margin: 10px;
@@ -53,6 +53,14 @@ img:hover{
 
 
 <body onLoad="loadHeader()">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=296305374163845";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<div id="bgSeperator">
 		<div id="wrapper">
 			<div id="header">
@@ -60,6 +68,8 @@ img:hover{
 
 		<div id="mediaNewspaper">
 			<!-- <div class="activity" id="drumCircles" onclick="showGallery('drum_circle')">-->
+		
+			
 				
 					<h1>Drum Circles</h1>
 					

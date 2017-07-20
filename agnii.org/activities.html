@@ -30,6 +30,8 @@
 
 
 <body onLoad="loadHeader()">
+
+
  
 <div id="galleryBlur" onclick="dismissGallery()"></div>
 <div id="gallery"></div>
@@ -47,24 +49,26 @@
 
 
 
-	<a href="drumcircle.html">
+	
 	<div class="activity" id="drumCircles" > <!-- <onclick="showGallery('drum_circle')">-->
 		<div class="activityTitle">
 			<h1>Drum Circles</h1>
 		</div>
 	<div class="activityImageLeft">
-		<img src="assets/drum_circle/thumb.jpg" height="200px" class="thumbImg"/>
+		<a href="drumcircle.html"><img src="assets/drum_circle/thumb.jpg" height="200px" class="thumbImg"/></a>
 	</div>
+	<div class="fb-like" data-href="http://agnii.org/media.html" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
 	<div class="activityDescription">
 		<p>A Drum circle is one of the most fun and exciting activities that Agnii engages the audience in.
 			With simple, fun and easy to follow instructions, the young and the old team up and jam with Agnii.
 			This jamming guarantees an experience one will never forget and makes an ace djembe player of anyone!
 			The heavenly sound of a hundred beats rising up and the spirit of unity that collective drumming brings is an 
 			experience unparalleled.</p>
+			
 	</div>
 	
 	</div>
-	</a>
+	
 
 	
 	<a href="firedance.html">
@@ -209,7 +213,14 @@
 
 
 
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=296305374163845";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="footerWrapper">
 <div id="footer">
 <span id="copyright">© Agnii 2013 |</span>
